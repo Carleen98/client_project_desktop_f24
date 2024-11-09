@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Basic Needs</title>
+</head>
+<body>
+    <a href="#main-content" class="skip-link atkinson-hyperlegible-bold">Skip to Main Content</a>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="atkinson-hyperlegible-regular">Home</a></li>
+                <li><a href="page_1.html" class="atkinson-hyperlegible-regular">CAPS</a></li>
+                <li><a href="page_2.html" class="active atkinson-hyperlegible-bold">Resources</a></li>
+                <li><a href="page_3.html" class="atkinson-hyperlegible-regular">MBC</a></li>
+            </ul>
+        </nav>
+        <h1>Basic Needs</h1>
+    </header>
+    <main id="main-content">
+        <h2>Welcome to basic needs</h2>
+        <p>We believe in fair and equitable access to food and other basic resources. Because when each of us has what we need, our community is stronger and our students are more successful.</p>
+        <p>This website has been created to share information about the resources available to students. It’s also a place to share data and research that will help the U-M community understand how important this work is for the entire campus.</p>
+        <p>This work is led by Student Life and supported by academic units and campus partners. Because more resources are being discovered and created on a regular basis, this website will be updated often. Please be patient as we grow this important resource.</p>
+        <h2>Resources</h2>
+        <p>Here at Student Life, we’re committed to the well-being of each student as a whole. We want to support academic success but recognize that support can be personal, too—which is why we provide resources for basic needs. Whether you have a housing question, health care concern or emergency funding need, the following resources will help as you navigate campus life at U-M.</p>
+        <h2>Resources By Category</h2>
+            <h3>Critical Incident Support & Conflict Management</h3>
+            <img src="images/criticalincident.jpg" alt="A anxious person sitting in front of a computer">
+            <h3>Finance</h3>
+            <img src="images/finance.jpg" alt="A person counting money">
+            <h3>Food</h3>
+            <img src="images/food.jpg" alt="A person cooking rices">
+            <h3>Health Care</h3>
+            <img src="images/healthcare-1.jpg" alt="Stethoscope">
+            <h3>Housing & Transportation</h3>
+            <img src="images/housingtransportation.jpg" alt="people waiting for a bus">
+    </main>
+    <footer>
+        <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+        <p class="atkinson-hyperlegible-regular">
+            <div>MSI Academic Advising</div>
+            <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources" class="atkinson-hyperlegible-regular">Student Support Services</a> | 
+            <a href="mailto:umsi.advising.msi@umich.edu" class="atkinson-hyperlegible-regular">umsi.advising.msi@umich.edu</a>
+        </p>
+        <p>© Copyrights <span id="year"></span> University of Michigan. All rights reserved.</p>
+    </footer>
+    <script>
+        const button = document.createElement("button");
+        button.innerText = "View all resources";
+        button.style.padding = "12px 20px";
+        button.style.fontSize = "1.5rem";
+        button.style.margin = "20px 0";
+        button.style.cursor = "pointer";
+        button.style.backgroundColor = "#00274C";
+        button.style.color = "white";
+        button.style.borderRadius = "50px";
+        button.addEventListener("click", function() {
+            window.location.href = "https://basicneeds.studentlife.umich.edu/resources/";
+        });
+        document.getElementById("main-content").appendChild(button);
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
+</body>
+</html>

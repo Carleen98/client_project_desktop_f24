@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>404 Not Found</title>
+</head>
+<body>
+    <header>
+        <h1>Page Not Found</h1>
+    </header>
+    <main>
+        <div class="error-image">
+            <p>We're sorry, but the page you are looking for doesn't exist. Please return to the <a href="index.html">home page</a>.</p>
+            <img src="images/oops-404-error-with-broken-robot-concept-illustration_114360-5529.avif" alt="404 error with broken robot">
+        </div>
+    </main>    
+    <footer>
+        <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+        <p class="atkinson-hyperlegible-regular">
+            <div>MSI Academic Advising</div>
+            <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources" class="atkinson-hyperlegible-regular">Student Support Services</a> | 
+            <a href="mailto:umsi.advising.msi@umich.edu" class="atkinson-hyperlegible-regular">umsi.advising.msi@umich.edu</a>
+        </p>
+        <p>© Copyrights <span id="year"></span> University of Michigan. All rights reserved.</p>
+    </footer>
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
+</body>
+</html>
